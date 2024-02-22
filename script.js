@@ -1,13 +1,11 @@
-var names = ["John", "Jane", "Jack", "Alice"];
-
-// Loop over each name
-names.forEach(function(name) {
-    // Check if the name starts with "J" or "j"
-    if (name.charAt(0) === "J" || name.charAt(0) === "j") {
-        console.log("Goodbye J" + name);//"Goodbye JSomeName"
-    } 
-    else {
-        console.log("Hello " + name); //"Hello SomeName"
-
+(function() {
+    var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+    for (var i = 0; i < names.length; i++) {
+        var firstLetter = names[i].charAt(0).toLowerCase();
+        if (firstLetter === 'j') {
+            byeSpeaker.speak(names[i]);
+        } else {
+            helloSpeaker.speak(names[i]);
+        }
     }
-});
+})();
